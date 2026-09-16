@@ -6,6 +6,12 @@ on:
       - main
   workflow_dispatch:
 
+
+env:
+  DB_SERVER: ${{ secrets.DB_SERVER }}
+  DB_USER: ${{ secrets.DB_USER }}
+  DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -51,6 +57,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: '<nome-do-seu-webapp>'
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          app-name: 'backloggd-561082'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
           package: ./app
