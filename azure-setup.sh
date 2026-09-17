@@ -18,7 +18,7 @@ SQL_ADMIN_PASSWORD="FIAP@2tdspo2026"
 
 # Variáveis do GitHub
 GITHUB_REPO_NAME="nicholasbuzo/atividade-azure-devops"
-BRANCH="dev"
+BRANCH="main"
 
 echo ">>> Criando resource group ..."
 az group create --name $RESOURCE_GROUP_NAME  --location "$LOCATION"
