@@ -95,6 +95,7 @@ az webapp config appsettings set \
     XDT_MicrosoftApplicationInsights_PreemptSdk="1" \
     DB_USER="dbadmin" \
     DB_PASSWORD="FIAP@2tdspo2026" \
+    DB_SERVER="sqlserver-backloggd-561082.database.windows.net" \
     DATASOURCE_URL="jdbc:postgresql://$SQL_SERVER_NAME.postgres.database.azure.com:5432/$SQL_DB_NAME?sslmode=require"
 
 echo ">>> Reiniciando Web App e conectando App Insights ..."
