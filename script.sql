@@ -13,4 +13,3 @@ VALUES
     ('0003', 'God Of War', 'Acao-Aventura', 'Sony',     '2005-03-22'),
     ('0004', 'Valorant',   'FPS',           'Riot',     '2020-06-02'),
     ('0005', 'Terraria',   'Sandbox',       'Re-Logic', '2011-05-16');
-COMMIT;
