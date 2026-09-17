@@ -23,9 +23,9 @@ const port = process.env.PORT || 8080;
 
 // Configuração do Banco de Dados (Os alunos devem preencher as variáveis no Azure WebApp)
 const dbConfig = {
-    user: 'dbadmin',
-    password: 'FIAP@2tdspo2026',
-    server: 'sqlserver-backloggd-561082.database.windows.net', // Ex: meuserver.database.windows.net
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    server: process.env.DB_SERVER, // Ex: meuserver.database.windows.net
     database: 'backloggddb',
     options: {
         encrypt: true, // Necessário para Azure SQL
